@@ -7,45 +7,22 @@
     <title>Document</title>
 </head>
 <body>
-    <table border="1px" width="75%" height="300">
-<tr>
-<th>Nom</th>
-<th>Prenom</th>
-<th>Email</th>
-<th> Sexe</th>
-<th>Photo</th>
-<th> Pyes</th>
-<th>Le  langages preferes</th>
-<th>Domaune d activites</th>
-</tr>
-<tr>
-    <td> <input type="Nom" placeholder="nom">   </td>
-    <td><input type="Prenom" placeholder="Prenom"></td>
-    <td><input type="email" placeholder=" email"></td>
-    <td><label>Masculin</label><input type="radio" name="gender"> 
-        <label>Feminin</label><input type="radio" name="gender"></td>
-    <td><button type="submit"> Choisissez un Fichier  </button></td>
-    <td>  <form><select> 
-            <option value="maroc"> maroc</option>
-             <option value="Spain">spain</option> 
-             <option value="france">france</option>
-             </select></form> 
+    <dialog open>  <table>
+    <tr>
+   <td>
+    <input type="email" name="email" placeholder=" email" minlength="3" maxlength="15" >
     </td>
-    <td> <form> <select>
-         <option value="Java"> java</option>
-          <option value="C++">C++</option> 
-          <option value="PHP">PHP</option> 
-        </select></form>
-    </td>  
-<td> <input type="checkbox" name="Informatique " required> <label >Informatique</label> 
-    <input type="checkbox" name="Gestion" required><label> Gestion</label>
-    <input type="checkbox" name="Pedagogie" required><label >Pedagogie</label>
-</td>
-
+    <tr>
+        <td>
+            <input type="password" name="password" placeholder="password" minlength="4" maxlength="15"> 
+        </td>
+    </tr>
+<tr>
+    <td>
+        <button type="submit"> envia</button>
+    </td>
 </tr>
-
-    </table>
-    <button type="submit" > Envoyer</button>
-    <button type="submit">Annuler</button>
+   </dialog>
+ </table>
 </body>
 </html>
